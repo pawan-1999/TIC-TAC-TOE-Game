@@ -9,14 +9,14 @@ namespace Tic_Tac_Toe_Game
         public const char X = 'X';
         public const char O = 'O';
 
-        public void gameBoard()
+        char[] Board = new char[10];
+        public  void gameBoard()
         {
-            char[] gameBoard = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' , ' '};
-            Console.WriteLine(gameBoard[2]+ " " + gameBoard[3] + " " + gameBoard[4]);
-            Console.WriteLine("-------------");
-            Console.WriteLine(gameBoard[5] + " " + gameBoard[6] + " " + gameBoard[7]);
-            Console.WriteLine("-------------");
-            Console.WriteLine(gameBoard[8] + " " + gameBoard[9] + " " + gameBoard[10]);
+           
+            for (int i = 1 ; i < 9 ; i++)
+            {
+                Board[i] = ' '; 
+            }
         }
 
         public void abillityToInput()
