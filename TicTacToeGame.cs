@@ -25,7 +25,7 @@ namespace Tic_Tac_Toe_Game
             int compChoice = random.Next(0, 2);
             Console.WriteLine("Enter you Choice from O/X :");
             char playerChoice = Convert.ToChar(Console.ReadLine());
-            if ((playerChoice == 'X' || playerChoice =='O') 
+            if (playerChoice == 'X' || playerChoice =='O') 
             {
                 Console.WriteLine("Player Chose " + playerChoice);
             }
