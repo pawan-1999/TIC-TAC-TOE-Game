@@ -22,17 +22,29 @@ namespace Tic_Tac_Toe_Game
         public void abillityToInput()
         {
             Random random = new Random();
-            int letterCheck = random.Next(0, 2);
-            switch (letterCheck)
+            int compChoice = random.Next(0, 2);
+            Console.WriteLine("Enter you Choice from O/X :");
+            char playerChoice = Convert.ToChar(Console.ReadLine());
+            if ((playerChoice == 'X' || playerChoice =='O') 
+            {
+                Console.WriteLine("Player Chose " + playerChoice);
+            }
+            else
+            {
+                Console.WriteLine("Entered invalid input  ");
+            }
+            
+            switch (compChoice)
             {
                 case 0:
-                    Console.WriteLine("You have assigned " +O) ;
+                    Console.WriteLine("Comp have choose " +O) ;
                     break;
                 case 1:
-                    Console.WriteLine("You have assigned " +X);
+                    Console.WriteLine("Comp have choose " +X);
                     break;
             }
 
         }
     }
 }
+
