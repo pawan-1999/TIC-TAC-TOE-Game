@@ -9,6 +9,7 @@ namespace Tic_Tac_Toe_Game
             Console.WriteLine("Hello World!");
             TicTacToeGame obj = new TicTacToeGame();
             obj.gameBoard();
+            obj.abillityToInput();
         }
     }
 }
